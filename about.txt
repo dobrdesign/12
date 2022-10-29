@@ -1,0 +1,11 @@
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Inter;
+  color: black;
+  font-size: 15px;
+  background: #fff;
+  padding: 10px 20px 10px 20px;
+background-image: url("asset/img/copy.png") no-repeat top right;
+  text-decoration: none;
+  cursor: pointer;

@@ -1,0 +1,17 @@
+*
+{
+    font-family: sans-serif;
+}
+
+.div
+{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.div a
+{
+    font-size: 50px;
+    color: #333;
+    text-decoration: none;
+}
