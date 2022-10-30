@@ -163,11 +163,11 @@
 
 .header_title
 {
+    text-align: center;
 	padding-top: 12rem;
 	font-size: 3.75rem;
 	font-weight: 800;
 	justify-content: center;
-	display: flex;
 }
 
 .header_desc
