@@ -38,10 +38,8 @@
 							</div>
 						</div>
 						<div class="text_center">
-							<div>
-								<a class="btn_center" href="index.html"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="form_btn_img" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
-								Вернуться на Главную
-								</a>
+							<div class="form_btn_t">
+								<div id="smart-button-container"> <div style="text-align: center;"> <div id="paypal-button-container"></div> </div> </div> <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script> <script> function initPayPalButton() { paypal.Buttons({ style: { shape: 'pill', color: 'white', layout: 'horizontal', label: 'buynow', tagline: true }, createOrder: function(data, actions) { return actions.order.create({ purchase_units: [{"amount":{"currency_code":"USD","value":1}}] }); }, onApprove: function(data, actions) { return actions.order.capture().then(function(orderData) { // Full available details console.log('Capture result', orderData, JSON.stringify(orderData, null, 2)); // Show a success message within this page, e.g. const element = document.getElementById('paypal-button-container'); element.innerHTML = ''; element.innerHTML = '<h3>Thank you for your payment!</h3>'; // Or go to another URL:  actions.redirect('thank_you.html'); }); }, onError: function(err) { console.log(err); } }).render('#paypal-button-container'); } initPayPalButton(); </script>
 						</div>
 				</div>
 				</div>
