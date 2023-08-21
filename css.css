@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans:wght@300;400&display=swap');
+.con
+{
+	display: flex;
+	justify-content: center;
+	font-family: Manrope, sans-serif;
+}
+
+h1
+{
+	color: #fff;
+}
+
+body
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 800px;
+   	background-color: #000;
+}
